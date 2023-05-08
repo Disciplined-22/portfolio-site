@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
+      rel="stylesheet"/>
+    <meta name="description" content="Portfolio website" />
+    <meta name="keywords" content="web design, html, css, js" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="styles/modern-normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/utils.css">
+    <link rel="stylesheet" href="styles/components/header.css">
+    <link rel="stylesheet" href="styles/components/hero.css">
+    <link rel="stylesheet" href="styles/components/about.css">
+    <link rel="stylesheet" href="styles/components/featured.css">
+    <link rel="stylesheet" href="styles/components/work.css">
+    <link rel="stylesheet" href="styles/components/contact.css">
+    <link rel="stylesheet" href="styles/components/footer.css">
+    <link rel="stylesheet" href="styles/components/mobile-nav.css">
+    <link rel="stylesheet" href="styles/components/practice/priorex.css">
+    <link rel="stylesheet" href="styles/components/certification.css">
+    
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu" data-aos="fade-right">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+              
+          <li>
+            <a class="header__resume btn" href="#">Resume</a>
+          </li>
+        </ul>
+        <button aria-label="mobile nav button" class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <a class="mobile-nav__btn btn" href="#">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- End of Mobile Navigation -->
+    <main>
+      <section class="hero container">
+        <h2 class="hero__subtitle" data-aos="fade-left">Hi, I'm Siddharth 👋</h2>
+        <h1 class="hero__title">
+          FRONTEND <br />
+          DEVELOPER
+        </h1>
+        <p class="hero__description" data-aos="fade-left">
+          A passionate <strong>Frontend</strong> Developer and I have
+          specialized in building stunning pixel-perfect interactive
+          websites.
+        </p>
+        <a class="hero__btn btn" href="#contact" data-aos="fade-right">Reach out</a>
+      </section>
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description" data-aos="fade-right">
+            Hello, I am Siddharth Norajannavar a <strong>Frontend engineer</strong> aspirant. 
+          </p>
+
+          <p class="about__description" data-aos="fade-left">
+            I love programming and I would love to make career out of my passion which is programming.
+          </p>
+          
+          <p class="about__description" data-aos="fade-left">
+            Below you can find details about my skills and experiences which might bring value for your business or company.
+          </p>
+
+          <hr class="about__hr" />
+          <h3 class="about__subtitle" data-aos="fade-left">Skills</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list" data-aos="fade-right">Python</li>
+              <li class="about__list" data-aos="fade-left">CSS</li>
+              <li class="about__list" >HTML</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list" data-aos="fade-left">Git</li>
+              <li class="about__list" data-aos="fade-right">TailwindCSS</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="featured" class="featured container section">
+        <h3 class="featured__subtitle" data-aos="fade-right">About my</h3>
+        <div class="featured__wrapper">
+          <h2 class="featured__title" data-aos="fade-left">Portfolio project</h2>
+        </div>
+        <p class="featured__description" data-aos="fade-right">
+          I decided to make my portfolio project using my programming skills and I really loved the journey to make this project. I was able to implement different concepts like flexbox, css grid, media queries and many more, into this project. Thank you for your time to look at it.  
+        </p>
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label" data-aos="fade-left">Tech stack</h3>
+            <ul class="featured__tech-stack">
+              <li class="featured__info" data-aos="fade-left">Html</li>
+              <li class="featured__info" data-aos="fade-right">css</li>
+              <li class="featured__info" data-aos="fade-left">Javascript</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label" data-aos="fade-left">Project type</h3>
+            <p class="featured__info" data-aos="fade-right">Frontend website</p>
+          </div>
+          <div>
+            <h3 class="featured__label" data-aos="fade-right">Timeline</h3>
+            <p class="featured__info" data-aos="fade-right">April 2023</p>
+          </div>
+        </div>
+
+    
+      <section class="work container section">
+        <h2 class="work__title" data-aos="fade-right">Projects</h2>
+        <p class="work__description" data-aos="fade-left">
+          Below are the projects I have made so far. I personally believe that building projects helps you to be a better software engineer, because building projects helps you to get practical knowledge and how you can apply theoretical concepts to solve different probelms. Also we come across different problems and we try to solve those problems which helps us to learn alot. 
+        </p>
+
+
+        <div class="work__container">
+
+          <!-- Project 1 -->
+          <div class="work__img-wrapper work__image1">
+            <img
+               data-aos="fade-right"
+              src="public/SCUBAPIC.jpg"
+              alt="scuba website"
+            />
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">Scuba Website</h3>
+            <p class="work__project-description1">
+              I really enjoyed working on this project. I had to learn about setting the background images. I also had to learn about positioning of div containers using relative and absolute postions. This project was an easy project for me.
+            </p>
+            
+            <a class="btn work__project-btn" href="https://disciplined-22.github.io/water-html-css/" target="_blank" data-aos="fade-left">Website</a>
+          </div>
+
+
+
+          <!-- Project 2 -->
+
+          <h3 class="work__project-title">AI Desktop Voice Assistant</h3>
+          <div class="work__img-wrapper work__image2">
+            <img
+               data-aos="fade-left"
+              src="public/AI assisatnt.jpg"
+            />
+          </div>
+
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">AI Desktop Voice Assistant</h3>
+            <p class="work__project-description1">
+              Made a program to create Voice Assistant using python. It also enables me to open appllications, images and videos using my voice commands. This was my first project, after this project I was just fallen in love with programming.
+            </p>
+           
+            <a class="btn work__project-btn" href="https://github.com/Disciplined-22/aidesktopvoice-assistant" target="_blank" data-aos="fade-left">Website</a>
+          </div>
+
+          <!-- Project 3 -->
+
+          <h3 class="work__project-title">Chatter Bot</h3>
+          <div class="work__img-wrapper work__image3">
+            <img
+              data-aos="fade-right"
+              src="public/chatterbot.jpg"
+              alt="chatterbot"
+            />
+          </div>
+          <div class="work__project work__content3">
+            <h3 class="work__project-subtitle">Chatter Bot</h3>
+            <p class="work__project-description1">
+              I made a chatbot using a chatterbot module, it was really a fun project because I made a chatbot which was having conversations with me. A mix of python text to speech and a chatbot made this project a awesome project for me.
+            </p>
+            
+            <a class="btn work__project-btn" href="https://github.com/Disciplined-22/chatterbot-chatbot" target="_blank" data-aos="fade-left">Website</a>
+          </div>
+          
+          
+          <!-- Project 4 -->
+
+          <h3 class="work__project-title">Youtube clone</h3>
+          <div class="work__img-wrapper work__image4">
+            <img
+               data-aos="fade-left"
+              src="public/youtubeclone.jpg"
+              alt="youtube clone"
+            />
+          </div>
+          <div class="work__project work__content4">
+            <h3 class="work__project-subtitle">Youtube clone</h3>
+            <p class="work__project-description1">
+             I have made a youtube clone which helped me to master html and css, also helped me to learn about different conecpts like flexbox, css grid, nested layouts in depth.
+            </p>
+            <a class="btn work__project-btn" href="https://disciplined-22.github.io/youtubeclone.html/"  target="_blank" data-aos="fade-right">Website</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications section -->
+      <section class="certification container section">
+        
+        
+        <div class="certification__content">
+        <h2 data-aos="fade-right">Certifications</h2>
+        <ul>
+          <li class="certification__list">I have completed online course regarding Java and Python from Unschool.</li>
+          <li class="certification__list">It was really a beautiful journey for me.</li>
+          <li class="certification__list">I had started my programming journey from this particular platform.</li>
+          <li class="certification__list">After completing this course I was able to have a good idea about programming.</li>
+          <li class="certification__list">I was really able to understand that it's not about only learning a programming langauge.</li>
+          <li class="certification__list">There are other crucial and major concepts like choosing my domain, problem solving, critical thinking, analytical thinking, being creative which has to be understood and should be implemented in my skills to be a better programmer.</li>
+          <li class="certification__list">Now I am really passionate about programming would love to make a career out of it.</li>
+        </ul>
+      </div>
+
+      <div data-aos="fade-left" class="certification__image_container">
+        <img src="public/certi and experience/unschool.jpg" alt="" class="certification__image">
+      </div>
+      
+      </section>
+
+      <section class="priorex container section">
+        <div class="priorex__content">
+        <h2 data-aos="fade-left">Prior Experience</h2>
+        <ul>
+          <li class="priorex__list">Assisted recruiters in onboarding process.</li>
+          <li class="priorex__list">Solved the issues of recruiters when they were facing issues with the Hirect application.</li>
+          <li class="priorex__list">Solved the complex technical issues by collabrating with the technical team.</li>
+          <li class="priorex__list">Recruiters who were frustrated or unhappy with the Hirect services, handled those kind of recruiters in a calm and professional manner.</li>
+          <li class="priorex__list">Got promoted has customer support executive because of my good performance.</li>
+          <li class="priorex__list">Brought an ROI(Return on investment) of INR 30,000+ for the company by providing a better customer support experience to the recruiters.</li>
+        </ul>
+        
+      </div>
+      <div data-aos="fade-right" class="priorex__img__container">
+        <img src="public/certi and experience/hirect.jpg" alt="" class="priorex__image">
+      </div>
+      </section>
+
+      <section class="container section">
+        <h1 class="role-model">My Role Models</h1>
+        <link rel="stylesheet" href="styles/components/practice/slide.css">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="public/quote-elon-musk.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="public/quotes-stevejobs.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="public/swamivivekanda.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+        </div>
+        
+</section>
+
+
+     
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title" data-aos="fade-left">Get In Contact</h2>
+        <p class="contact__description">
+          If my skills can help you to grow your business  or can add value to your company. Please contact me. 
+          Also  at the same time I will be learning new skills and upgrading my skills because for me "Life is a journey of learning". 
+          So you can also have my resume for future reference.
+          Thank you for your valuable time.
+        </p>
+        <a
+          
+          class="contact__btn btn"
+          href="mailto:dragoonattack2011@gmail.com"
+          target="_blank"
+          
+          
+          >Send a mail</a
+        >
+      </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">Siddharth Norajannavar</h3>
+    </footer>
+    
+    <!-- <script type="module" src="./src/main.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 1500,
+          once: true,
+        });
+      </script>
+
+      <script src="src/utils/mobile-nav.js"></script>
+      <script src="src/utils/dark-mode.js"></script>
+      <script src="src/utils/slide.js"></script>
+  </body>
+</html>
+ 
